@@ -1,0 +1,170 @@
+@import 'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css';
+
+.Input-Container{
+    position: relative;
+    left: 540px;
+    width: 550px;
+    height: 61px;
+ }
+
+ .Select-All-Checkbox{
+    position: absolute;
+    left: 30px;
+    top: 25px;
+    text-align: left;
+    padding: 10px;
+ }
+
+.Input_Section{
+    width: 550px;
+    height: 61px;
+}
+
+.Todo-Input{
+    font-family: 'Roboto Slab', serif;
+    font-size: 23px;
+    padding: 0px 80px;
+    font-weight: bold;
+    background-color: #322F39; 
+    border: 1px solid #322F39;
+    color: #eee;
+    width: 470px;
+    height: inherit;
+    margin-top: 15px;
+}
+
+.Todo-Input::placeholder{
+    color: #3f3c49;
+    font-weight: normal;
+    font-size: 23px;
+    font-family: inherit;
+    font-style: italic;
+    padding-left: 30px;
+}   
+
+.Data-Container-Lower{
+    position: absolute;
+    left: 539px;
+    top: 206px;
+}
+
+.Content-Description{
+    position: absolute;
+    top:160px;
+    left: 540px;
+    background-color: #eee;
+    width: 632px;
+    height: 47px;
+}
+
+.Content-Description-Inner-Container{
+    margin-top: 10px; 
+    vertical-align: middle;
+    width: 632px;
+    height: 47px;
+}
+
+.All-Selected[type=checkbox]{
+    display: none;
+}
+
+.Left-Align-Item{
+    position: absolute;
+    left: 20px;
+    margin-right: 40px;
+}
+
+.Right-Align-Item{
+    position: absolute;
+    right: 20px;
+}
+
+.List-Btn{
+    font-size: 13px;
+    margin-left: 3px; 
+    vertical-align: middle;
+    color: #6C6777;
+    border: 1px solid #6C6777;
+    border-radius: 10px;
+    background-color: #eee;
+}
+.List-Btn-Active{
+    font-size: 13px;
+    margin-left: 3px; 
+    color: #eee;
+    border: 1px solid #6C6777;
+    border-radius: 10px;
+    background-color: #6C6777;
+}
+
+.Clear-Btn{
+    font-size: 13px;
+    color: #fff;
+    background-color: #EE1630;
+    border: 1px solid #EE1630;
+    border-radius: 10px;
+}
+
+.Left-Item{
+ 
+    vertical-align: middle;
+    margin-right: 40px;
+    color: #6C6777;
+}
+
+.Todo-List-Container{
+  
+    width: 632px;
+    height: 61px;
+    border: 1px solid #322F39;
+}
+
+.Todo-List-ul{
+   
+    list-style: none;
+    font-size: 23px;
+    font-weight: bold;
+    color: #eee;
+    text-align: left;
+    overflow: hidden;
+}
+
+.Todo-List-li-Completed{
+    text-decoration: line-through;
+    color: #3C3647;
+}
+
+.List-Checkbox[type=checkbox]{
+    display: none;
+}
+
+.List-Checkbox[type=checkbox] + .Todo-List-Value::before{
+    cursor: pointer;
+    font-family: "FontAwesome";
+    font-size: 23px;
+    content:  '\f111';
+    color: #3f3c49;
+    padding: 10px;
+    margin-left: 0px;
+    display: inline;
+}
+
+.List-Checkbox[type=checkbox]:checked + .Todo-List-Value::before{
+    display: inline;
+    content:  '\f058';
+    color:#7DD180;  
+}
+
+.Delete-Item-Btn {
+    cursor: pointer;
+    opacity: 0;
+    margin-right: 40px; 
+    float: right;
+    vertical-align: middle;
+    color: #d10c23;
+}
+
+.Todo-List-Container:hover .Delete-Item-Btn{
+    transition: 1s;
+    opacity: 1;
+}

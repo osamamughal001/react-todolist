@@ -1,0 +1,14 @@
+.App {
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+  font-size: 16px;
+}
+.Heading{
+  color: #7DD180;
+  font-size: 32px;
+  margin-top: 20px;
+  text-shadow: 0px 2px #231C31;
+  font-weight: bolder;
+}
+
+
